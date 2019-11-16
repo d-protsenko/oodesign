@@ -8,6 +8,13 @@
     <artifactId>object-oriented-design</artifactId>
     <version>1.0.0</version>
 
+    <repositories>
+        <repository>
+            <id>smartactors_core_and_core_features_dev</id>
+            <url>https://repository.smart-tools.info/artifactory/smartactors_core_and_core_features_dev</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -42,6 +49,63 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.8.9</version>
         </dependency>
+        <!--from 7bits internship-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>base</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>iobject</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>ioc</artifactId>
+            <version>0.6.0</version>
+        </dependency><!--TESTS-->
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>feature-loading-system</artifactId>
+            <version>0.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>ioc-plugins.ioc-simple-container-plugin</artifactId>
+            <version>0.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>ioc-plugins</artifactId>
+            <version>0.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>iobject-plugins</artifactId>
+            <version>0.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.smart_tools.smartactors</groupId>
+            <artifactId>field-plugins</artifactId>
+            <version>0.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!--7bits-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>

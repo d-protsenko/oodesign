@@ -15,7 +15,7 @@ public class SortingFactory {
     private static final Supplier<ISort> makeRadixSort = RadixSort::new;
     private static final Supplier<ISort> makeHeapSort = HeapSort::new;
 
-    private Map<Sorting, Supplier> sortMap;
+    private Map<Sorting, Supplier<ISort>> sortMap;
 
     public SortingFactory() {
         sortMap = new HashMap<>();
@@ -28,6 +28,6 @@ public class SortingFactory {
         if (!sortMap.containsKey(sort)) {
             return null;
         }
-        return (ISort)sortMap.get(sort).get();
+        return sortMap.get(sort).get();
     }
 }

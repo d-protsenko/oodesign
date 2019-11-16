@@ -25,6 +25,7 @@ hs_err_pid*
 *.jar
 **/target/
 /*/.classpath
+*.classpath
 
 # Log file
 *.log.*

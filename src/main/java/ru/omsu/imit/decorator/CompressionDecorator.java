@@ -1,4 +1,5 @@
 package ru.omsu.imit.decorator;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

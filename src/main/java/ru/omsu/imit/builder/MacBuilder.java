@@ -3,7 +3,7 @@ package ru.omsu.imit.builder;
 import ru.omsu.imit.builder.components.CPU;
 import ru.omsu.imit.builder.components.RAM;
 
-public class MacBuilder implements ComputerBuilder{
+public class MacBuilder implements ComputerBuilder {
     private Computer mac;
 
     @Override
